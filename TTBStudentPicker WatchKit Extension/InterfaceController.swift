@@ -46,6 +46,14 @@ class InterfaceController: WKInterfaceController {
         print(String(index))
     }
     
+    @IBAction func refreshButtonOnClick() {
+        refillNameArray()
+        labelFoo.setText("Hello!")
+        studentCountLabel.setText("Students left: " + String(nameArray.count))
+        buttonOutlet.setTitle("Start")
+        print("Refresh Context Menu Button Clicked.")
+    }
+    
     func refillNameArray() {
         nameArray = [String]()
         for n in fullNameArray {

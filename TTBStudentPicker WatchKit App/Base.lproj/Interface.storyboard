@@ -24,6 +24,15 @@
                             </connections>
                         </button>
                     </items>
+                    <menu key="menu" id="tnD-mU-Uls">
+                        <items>
+                            <menuItem title="Restart" icon="repeat" id="Jrf-3u-D2H">
+                                <connections>
+                                    <action selector="refreshButtonOnClick" destination="AgC-eL-Hgc" id="xet-UT-XpK"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="buttonOutlet" destination="WmV-J3-FqD" id="EDx-DB-5m9"/>
                         <outlet property="labelFoo" destination="hzF-WK-F2L" id="eY9-71-LyU"/>
