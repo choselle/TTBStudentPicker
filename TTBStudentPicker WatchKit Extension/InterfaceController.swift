@@ -12,6 +12,7 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet weak var labelFoo: WKInterfaceLabel!
+    @IBOutlet weak var indexCountLabel: WKInterfaceLabel!
     
     var nameArray = ["Chase", "Ashley", "Chad", "Ted"]
     var indexArray = [Int]()
@@ -25,9 +26,16 @@ class InterfaceController: WKInterfaceController {
         refillIndexArray()
     }
     @IBAction func buttonOnClick() {
-        index = Int(arc4random_uniform(UInt32(nameArray.count)))
-        labelFoo.setText(nameArray[index])
-        nameArray.remove(at: index)
+        if indexArray.count == 0 {
+            refillIndexArray()
+        } else {
+            index = Int(arc4random_uniform(UInt32(indexArray.count)))
+            labelFoo.setText(nameArray[index])
+            indexArray.remove(at: index)
+        }
+        indexCountLabel.setText(String(index))
+        print(String(indexArray.count))
+        print(String(index))
     }
     
     func refillIndexArray() {
@@ -35,6 +43,7 @@ class InterfaceController: WKInterfaceController {
         for n in 1...nameArrayCount {
             indexArray.append(n)
         }
+        print("refillIndexArray() fired")
     }
     
     override func willActivate() {
