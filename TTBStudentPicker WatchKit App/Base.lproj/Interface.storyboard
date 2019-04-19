@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TTBStudentPicker_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="121" alignment="center" text="TEST" textAlignment="center" id="hzF-WK-F2L">
+                        <label width="136" height="121" alignment="center" text="Hello!" textAlignment="center" id="hzF-WK-F2L">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
                         <button width="1" alignment="left" title="Next Student" id="WmV-J3-FqD">
@@ -28,7 +28,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219.95061728395061" y="344.74619289340097"/>
+            <point key="canvasLocation" x="219.95061728395061" y="336.11675126903549"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

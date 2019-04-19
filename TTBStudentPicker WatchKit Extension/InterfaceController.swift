@@ -12,10 +12,9 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet weak var labelFoo: WKInterfaceLabel!
-    @IBOutlet weak var indexCountLabel: WKInterfaceLabel!
     
-    var nameArray = ["Chase", "Ashley", "Chad", "Ted"]
-    var indexArray = [Int]()
+    let fullNameArray = ["Chase", "Ashley", "Chad", "Ted"]
+    var nameArray = [String]()
 
     var index = 0
     
@@ -23,27 +22,27 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        refillIndexArray()
+        refillNameArray()
     }
     @IBAction func buttonOnClick() {
-        if indexArray.count == 0 {
-            refillIndexArray()
-        } else {
-            index = Int(arc4random_uniform(UInt32(indexArray.count)))
-            labelFoo.setText(nameArray[index])
-            indexArray.remove(at: index)
+        if nameArray.isEmpty {
+            refillNameArray()
         }
-        indexCountLabel.setText(String(index))
-        print(String(indexArray.count))
+        
+        index = Int(arc4random_uniform(UInt32(nameArray.count)))
+        labelFoo.setText(nameArray[index])
+        nameArray.remove(at: index)
+        
+        print(String(nameArray.count))
         print(String(index))
     }
     
-    func refillIndexArray() {
-        let nameArrayCount = nameArray.count
-        for n in 1...nameArrayCount {
-            indexArray.append(n)
+    func refillNameArray() {
+        nameArray = [String]()
+        for n in fullNameArray {
+            nameArray.append(n)
         }
-        print("refillIndexArray() fired")
+        print("refillNameArray() fired")
     }
     
     override func willActivate() {
@@ -55,5 +54,4 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
 }
