@@ -14,17 +14,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TTBStudentPicker_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="121" alignment="center" text="Hello!" textAlignment="center" id="hzF-WK-F2L">
+                        <label width="136" height="98" alignment="center" text="Hello!" textAlignment="center" id="hzF-WK-F2L">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
-                        <button width="1" alignment="left" title="Next Student" id="WmV-J3-FqD">
+                        <label width="136" alignment="center" text="Students left: " textAlignment="center" id="bFY-tS-d38"/>
+                        <button width="1" alignment="left" title="Start" id="WmV-J3-FqD">
                             <connections>
                                 <action selector="buttonOnClick" destination="AgC-eL-Hgc" id="4Sd-iX-jBb"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
+                        <outlet property="buttonOutlet" destination="WmV-J3-FqD" id="EDx-DB-5m9"/>
                         <outlet property="labelFoo" destination="hzF-WK-F2L" id="eY9-71-LyU"/>
+                        <outlet property="studentCountLabel" destination="bFY-tS-d38" id="yiK-A3-Lxg"/>
                     </connections>
                 </controller>
             </objects>

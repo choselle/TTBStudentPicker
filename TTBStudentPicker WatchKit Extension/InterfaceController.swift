@@ -12,6 +12,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet weak var labelFoo: WKInterfaceLabel!
+    @IBOutlet weak var studentCountLabel: WKInterfaceLabel!
+    @IBOutlet weak var buttonOutlet: WKInterfaceButton!
     
     let fullNameArray = ["Chase", "Ashley", "Chad", "Ted"]
     var nameArray = [String]()
@@ -23,8 +25,14 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         refillNameArray()
+        studentCountLabel.setText("Students left: " + String(nameArray.count))
     }
     @IBAction func buttonOnClick() {
+        if nameArray.count == 1 {
+            buttonOutlet.setTitle("Reset")
+        } else {
+            buttonOutlet.setTitle("Next Student")
+        }
         if nameArray.isEmpty {
             refillNameArray()
         }
@@ -33,6 +41,7 @@ class InterfaceController: WKInterfaceController {
         labelFoo.setText(nameArray[index])
         nameArray.remove(at: index)
         
+        studentCountLabel.setText("Students left: " + String(nameArray.count))
         print(String(nameArray.count))
         print(String(index))
     }
