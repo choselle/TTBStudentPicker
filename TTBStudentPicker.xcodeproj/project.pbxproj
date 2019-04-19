@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDEAFB9A2268295800FC830C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFB992268295800FC830C /* AppDelegate.swift */; };
+		FDEAFB9C2268295800FC830C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFB9B2268295800FC830C /* ViewController.swift */; };
+		FDEAFB9F2268295800FC830C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFB9D2268295800FC830C /* Main.storyboard */; };
+		FDEAFBA12268295B00FC830C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFBA02268295B00FC830C /* Assets.xcassets */; };
+		FDEAFBA42268295B00FC830C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFBA22268295B00FC830C /* LaunchScreen.storyboard */; };
+		FDEAFBA92268295B00FC830C /* TTBStudentPicker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FDEAFBA82268295B00FC830C /* TTBStudentPicker WatchKit App.app */; };
+		FDEAFBAF2268295B00FC830C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFBAD2268295B00FC830C /* Interface.storyboard */; };
+		FDEAFBB12268295E00FC830C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFBB02268295E00FC830C /* Assets.xcassets */; };
+		FDEAFBB82268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FDEAFBB72268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FDEAFBBD2268295F00FC830C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFBBC2268295F00FC830C /* InterfaceController.swift */; };
+		FDEAFBBF2268295F00FC830C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFBBE2268295F00FC830C /* ExtensionDelegate.swift */; };
+		FDEAFBC12268295F00FC830C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFBC02268295F00FC830C /* NotificationController.swift */; };
+		FDEAFBC32268296000FC830C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFBC22268296000FC830C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDEAFBAA2268295B00FC830C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDEAFB8E2268295800FC830C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDEAFBA72268295B00FC830C;
+			remoteInfo = "TTBStudentPicker WatchKit App";
+		};
+		FDEAFBB92268295E00FC830C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDEAFB8E2268295800FC830C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDEAFBB62268295E00FC830C;
+			remoteInfo = "TTBStudentPicker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDEAFBCB2268296100FC830C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FDEAFBB82268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEAFBCF2268296100FC830C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FDEAFBA92268295B00FC830C /* TTBStudentPicker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FDEAFB962268295800FC830C /* TTBStudentPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTBStudentPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEAFB992268295800FC830C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDEAFB9B2268295800FC830C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDEAFB9E2268295800FC830C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDEAFBA02268295B00FC830C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDEAFBA32268295B00FC830C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDEAFBA52268295B00FC830C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEAFBA82268295B00FC830C /* TTBStudentPicker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTBStudentPicker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEAFBAE2268295B00FC830C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FDEAFBB02268295E00FC830C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDEAFBB22268295E00FC830C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEAFBB72268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TTBStudentPicker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEAFBBC2268295F00FC830C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FDEAFBBE2268295F00FC830C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FDEAFBC02268295F00FC830C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FDEAFBC22268296000FC830C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDEAFBC42268296000FC830C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEAFBC52268296000FC830C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDEAFB932268295800FC830C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEAFBB42268295E00FC830C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDEAFB8D2268295800FC830C = {
+			isa = PBXGroup;
+			children = (
+				FDEAFB982268295800FC830C /* TTBStudentPicker */,
+				FDEAFBAC2268295B00FC830C /* TTBStudentPicker WatchKit App */,
+				FDEAFBBB2268295F00FC830C /* TTBStudentPicker WatchKit Extension */,
+				FDEAFB972268295800FC830C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDEAFB972268295800FC830C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAFB962268295800FC830C /* TTBStudentPicker.app */,
+				FDEAFBA82268295B00FC830C /* TTBStudentPicker WatchKit App.app */,
+				FDEAFBB72268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDEAFB982268295800FC830C /* TTBStudentPicker */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAFB992268295800FC830C /* AppDelegate.swift */,
+				FDEAFB9B2268295800FC830C /* ViewController.swift */,
+				FDEAFB9D2268295800FC830C /* Main.storyboard */,
+				FDEAFBA02268295B00FC830C /* Assets.xcassets */,
+				FDEAFBA22268295B00FC830C /* LaunchScreen.storyboard */,
+				FDEAFBA52268295B00FC830C /* Info.plist */,
+			);
+			path = TTBStudentPicker;
+			sourceTree = "<group>";
+		};
+		FDEAFBAC2268295B00FC830C /* TTBStudentPicker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAFBAD2268295B00FC830C /* Interface.storyboard */,
+				FDEAFBB02268295E00FC830C /* Assets.xcassets */,
+				FDEAFBB22268295E00FC830C /* Info.plist */,
+			);
+			path = "TTBStudentPicker WatchKit App";
+			sourceTree = "<group>";
+		};
+		FDEAFBBB2268295F00FC830C /* TTBStudentPicker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAFBBC2268295F00FC830C /* InterfaceController.swift */,
+				FDEAFBBE2268295F00FC830C /* ExtensionDelegate.swift */,
+				FDEAFBC02268295F00FC830C /* NotificationController.swift */,
+				FDEAFBC22268296000FC830C /* Assets.xcassets */,
+				FDEAFBC42268296000FC830C /* Info.plist */,
+				FDEAFBC52268296000FC830C /* PushNotificationPayload.apns */,
+			);
+			path = "TTBStudentPicker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDEAFB952268295800FC830C /* TTBStudentPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDEAFBD02268296100FC830C /* Build configuration list for PBXNativeTarget "TTBStudentPicker" */;
+			buildPhases = (
+				FDEAFB922268295800FC830C /* Sources */,
+				FDEAFB932268295800FC830C /* Frameworks */,
+				FDEAFB942268295800FC830C /* Resources */,
+				FDEAFBCF2268296100FC830C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDEAFBAB2268295B00FC830C /* PBXTargetDependency */,
+			);
+			name = TTBStudentPicker;
+			productName = TTBStudentPicker;
+			productReference = FDEAFB962268295800FC830C /* TTBStudentPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDEAFBA72268295B00FC830C /* TTBStudentPicker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDEAFBCC2268296100FC830C /* Build configuration list for PBXNativeTarget "TTBStudentPicker WatchKit App" */;
+			buildPhases = (
+				FDEAFBA62268295B00FC830C /* Resources */,
+				FDEAFBCB2268296100FC830C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDEAFBBA2268295E00FC830C /* PBXTargetDependency */,
+			);
+			name = "TTBStudentPicker WatchKit App";
+			productName = "TTBStudentPicker WatchKit App";
+			productReference = FDEAFBA82268295B00FC830C /* TTBStudentPicker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FDEAFBB62268295E00FC830C /* TTBStudentPicker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDEAFBC82268296100FC830C /* Build configuration list for PBXNativeTarget "TTBStudentPicker WatchKit Extension" */;
+			buildPhases = (
+				FDEAFBB32268295E00FC830C /* Sources */,
+				FDEAFBB42268295E00FC830C /* Frameworks */,
+				FDEAFBB52268295E00FC830C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TTBStudentPicker WatchKit Extension";
+			productName = "TTBStudentPicker WatchKit Extension";
+			productReference = FDEAFBB72268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDEAFB8E2268295800FC830C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Chase Hoselle";
+				TargetAttributes = {
+					FDEAFB952268295800FC830C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FDEAFBA72268295B00FC830C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FDEAFBB62268295E00FC830C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FDEAFB912268295800FC830C /* Build configuration list for PBXProject "TTBStudentPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDEAFB8D2268295800FC830C;
+			productRefGroup = FDEAFB972268295800FC830C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDEAFB952268295800FC830C /* TTBStudentPicker */,
+				FDEAFBA72268295B00FC830C /* TTBStudentPicker WatchKit App */,
+				FDEAFBB62268295E00FC830C /* TTBStudentPicker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDEAFB942268295800FC830C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEAFBA42268295B00FC830C /* LaunchScreen.storyboard in Resources */,
+				FDEAFBA12268295B00FC830C /* Assets.xcassets in Resources */,
+				FDEAFB9F2268295800FC830C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEAFBA62268295B00FC830C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEAFBB12268295E00FC830C /* Assets.xcassets in Resources */,
+				FDEAFBAF2268295B00FC830C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEAFBB52268295E00FC830C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEAFBC32268296000FC830C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDEAFB922268295800FC830C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEAFB9C2268295800FC830C /* ViewController.swift in Sources */,
+				FDEAFB9A2268295800FC830C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEAFBB32268295E00FC830C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEAFBC12268295F00FC830C /* NotificationController.swift in Sources */,
+				FDEAFBBF2268295F00FC830C /* ExtensionDelegate.swift in Sources */,
+				FDEAFBBD2268295F00FC830C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDEAFBAB2268295B00FC830C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDEAFBA72268295B00FC830C /* TTBStudentPicker WatchKit App */;
+			targetProxy = FDEAFBAA2268295B00FC830C /* PBXContainerItemProxy */;
+		};
+		FDEAFBBA2268295E00FC830C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDEAFBB62268295E00FC830C /* TTBStudentPicker WatchKit Extension */;
+			targetProxy = FDEAFBB92268295E00FC830C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDEAFB9D2268295800FC830C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDEAFB9E2268295800FC830C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDEAFBA22268295B00FC830C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDEAFBA32268295B00FC830C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FDEAFBAD2268295B00FC830C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDEAFBAE2268295B00FC830C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDEAFBC62268296100FC830C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDEAFBC72268296100FC830C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDEAFBC92268296100FC830C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TTBStudentPicker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teachtobelieve.TTBStudentPicker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		FDEAFBCA2268296100FC830C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TTBStudentPicker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teachtobelieve.TTBStudentPicker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		FDEAFBCD2268296100FC830C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = TTBStudentPicker_WatchKit_Extension;
+				INFOPLIST_FILE = "TTBStudentPicker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teachtobelieve.TTBStudentPicker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		FDEAFBCE2268296100FC830C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = TTBStudentPicker_WatchKit_Extension;
+				INFOPLIST_FILE = "TTBStudentPicker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teachtobelieve.TTBStudentPicker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		FDEAFBD12268296100FC830C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TTBStudentPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teachtobelieve.TTBStudentPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDEAFBD22268296100FC830C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TTBStudentPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teachtobelieve.TTBStudentPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDEAFB912268295800FC830C /* Build configuration list for PBXProject "TTBStudentPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDEAFBC62268296100FC830C /* Debug */,
+				FDEAFBC72268296100FC830C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDEAFBC82268296100FC830C /* Build configuration list for PBXNativeTarget "TTBStudentPicker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDEAFBC92268296100FC830C /* Debug */,
+				FDEAFBCA2268296100FC830C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDEAFBCC2268296100FC830C /* Build configuration list for PBXNativeTarget "TTBStudentPicker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDEAFBCD2268296100FC830C /* Debug */,
+				FDEAFBCE2268296100FC830C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDEAFBD02268296100FC830C /* Build configuration list for PBXNativeTarget "TTBStudentPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDEAFBD12268296100FC830C /* Debug */,
+				FDEAFBD22268296100FC830C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDEAFB8E2268295800FC830C /* Project object */;
+}
