@@ -11,21 +11,26 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    // Second View Controller
     @IBOutlet weak var labelFoo: WKInterfaceLabel!
     @IBOutlet weak var studentCountLabel: WKInterfaceLabel!
     @IBOutlet weak var buttonOutlet: WKInterfaceButton!
     
-    let fullNameArray = ["Chase", "Ashley", "Chad", "Ted"]
+    let classAArray = ["Chase", "Ashley", "Chad", "Gwen", "Steve"]
+    let classBArray = ["Ted", "Sean", "Jordan", "Kenny", "Zach"]
     var nameArray = [String]()
 
     var index = 0
+    var currentClass = 1
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        refillNameArray()
-        studentCountLabel.setText("Students left: " + String(nameArray.count))
+        print("CurrentClass" + String(currentClass))
+        refillNameArray(classNumber: currentClass)
+        //studentCountLabel.setText("Students left: " + String(nameArray.count))
     }
     @IBAction func buttonOnClick() {
         if nameArray.count == 1 {
@@ -34,7 +39,7 @@ class InterfaceController: WKInterfaceController {
             buttonOutlet.setTitle("Next Student")
         }
         if nameArray.isEmpty {
-            refillNameArray()
+            refillNameArray(classNumber: currentClass)
         }
         
         index = Int(arc4random_uniform(UInt32(nameArray.count)))
@@ -42,29 +47,48 @@ class InterfaceController: WKInterfaceController {
         nameArray.remove(at: index)
         
         studentCountLabel.setText("Students left: " + String(nameArray.count))
-        print(String(nameArray.count))
-        print(String(index))
     }
     
     @IBAction func refreshButtonOnClick() {
-        refillNameArray()
+        refillNameArray(classNumber: currentClass)
         labelFoo.setText("Hello!")
         studentCountLabel.setText("Students left: " + String(nameArray.count))
         buttonOutlet.setTitle("Start")
-        print("Refresh Context Menu Button Clicked.")
     }
     
-    func refillNameArray() {
+    @IBAction func ClassAContextMenuPressed() {
+        print("Class A Context Menu Button Pressed")
+        currentClass = 1
+        refreshButtonOnClick()
+    }
+    
+    @IBAction func ClassBContextMenuPressed() {
+        print("Class B Context Menu Button Pressed")
+        currentClass = 2
+        refreshButtonOnClick()
+    }
+    
+    func refillNameArray(classNumber: Int) {
         nameArray = [String]()
-        for n in fullNameArray {
-            nameArray.append(n)
+        if (classNumber == 1) {
+            print("class number 1")
+            for n in classAArray {
+                nameArray.append(n)
+            }
+        } else if (classNumber == 2) {
+            print("class number 2")
+            for n in classBArray {
+                nameArray.append(n)
+            }
         }
+        
         print("refillNameArray() fired")
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
     }
     
     override func didDeactivate() {

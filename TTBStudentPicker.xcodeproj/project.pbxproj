@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD9066B2226A4A3E0080FAD4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066AE226A4A3E0080FAD4 /* InterfaceController.swift */; };
+		FD9066B3226A4A3E0080FAD4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066AD226A4A3E0080FAD4 /* NotificationController.swift */; };
+		FD9066B4226A4A3E0080FAD4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B1226A4A3E0080FAD4 /* ExtensionDelegate.swift */; };
+		FD9066B7226A5A5F0080FAD4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B5226A5A5F0080FAD4 /* Model.xcdatamodeld */; };
+		FD9066B8226A5A5F0080FAD4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B5226A5A5F0080FAD4 /* Model.xcdatamodeld */; };
 		FDEAFB9A2268295800FC830C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFB992268295800FC830C /* AppDelegate.swift */; };
 		FDEAFB9C2268295800FC830C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFB9B2268295800FC830C /* ViewController.swift */; };
 		FDEAFB9F2268295800FC830C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFB9D2268295800FC830C /* Main.storyboard */; };
@@ -16,10 +21,6 @@
 		FDEAFBAF2268295B00FC830C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFBAD2268295B00FC830C /* Interface.storyboard */; };
 		FDEAFBB12268295E00FC830C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFBB02268295E00FC830C /* Assets.xcassets */; };
 		FDEAFBB82268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FDEAFBB72268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FDEAFBBD2268295F00FC830C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFBBC2268295F00FC830C /* InterfaceController.swift */; };
-		FDEAFBBF2268295F00FC830C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFBBE2268295F00FC830C /* ExtensionDelegate.swift */; };
-		FDEAFBC12268295F00FC830C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFBC02268295F00FC830C /* NotificationController.swift */; };
-		FDEAFBC32268296000FC830C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFBC22268296000FC830C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD9066AC226A4A3E0080FAD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD9066AD226A4A3E0080FAD4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FD9066AE226A4A3E0080FAD4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FD9066AF226A4A3E0080FAD4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FD9066B0226A4A3E0080FAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9066B1226A4A3E0080FAD4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FD9066B6226A5A5F0080FAD4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FDEAFB962268295800FC830C /* TTBStudentPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTBStudentPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAFB992268295800FC830C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAFB9B2268295800FC830C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,12 +85,6 @@
 		FDEAFBB02268295E00FC830C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDEAFBB22268295E00FC830C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEAFBB72268295E00FC830C /* TTBStudentPicker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TTBStudentPicker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDEAFBBC2268295F00FC830C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		FDEAFBBE2268295F00FC830C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		FDEAFBC02268295F00FC830C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		FDEAFBC22268296000FC830C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDEAFBC42268296000FC830C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDEAFBC52268296000FC830C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				FDEAFBA02268295B00FC830C /* Assets.xcassets */,
 				FDEAFBA22268295B00FC830C /* LaunchScreen.storyboard */,
 				FDEAFBA52268295B00FC830C /* Info.plist */,
+				FD9066B5226A5A5F0080FAD4 /* Model.xcdatamodeld */,
 			);
 			path = TTBStudentPicker;
 			sourceTree = "<group>";
@@ -149,12 +152,12 @@
 		FDEAFBBB2268295F00FC830C /* TTBStudentPicker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				FDEAFBBC2268295F00FC830C /* InterfaceController.swift */,
-				FDEAFBBE2268295F00FC830C /* ExtensionDelegate.swift */,
-				FDEAFBC02268295F00FC830C /* NotificationController.swift */,
-				FDEAFBC22268296000FC830C /* Assets.xcassets */,
-				FDEAFBC42268296000FC830C /* Info.plist */,
-				FDEAFBC52268296000FC830C /* PushNotificationPayload.apns */,
+				FD9066AC226A4A3E0080FAD4 /* Assets.xcassets */,
+				FD9066B1226A4A3E0080FAD4 /* ExtensionDelegate.swift */,
+				FD9066B0226A4A3E0080FAD4 /* Info.plist */,
+				FD9066AE226A4A3E0080FAD4 /* InterfaceController.swift */,
+				FD9066AD226A4A3E0080FAD4 /* NotificationController.swift */,
+				FD9066AF226A4A3E0080FAD4 /* PushNotificationPayload.apns */,
 			);
 			path = "TTBStudentPicker WatchKit Extension";
 			sourceTree = "<group>";
@@ -280,7 +283,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEAFBC32268296000FC830C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +295,7 @@
 			files = (
 				FDEAFB9C2268295800FC830C /* ViewController.swift in Sources */,
 				FDEAFB9A2268295800FC830C /* AppDelegate.swift in Sources */,
+				FD9066B7226A5A5F0080FAD4 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEAFBC12268295F00FC830C /* NotificationController.swift in Sources */,
-				FDEAFBBF2268295F00FC830C /* ExtensionDelegate.swift in Sources */,
-				FDEAFBBD2268295F00FC830C /* InterfaceController.swift in Sources */,
+				FD9066B3226A4A3E0080FAD4 /* NotificationController.swift in Sources */,
+				FD9066B4226A4A3E0080FAD4 /* ExtensionDelegate.swift in Sources */,
+				FD9066B2226A4A3E0080FAD4 /* InterfaceController.swift in Sources */,
+				FD9066B8226A5A5F0080FAD4 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +631,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD9066B5226A5A5F0080FAD4 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD9066B6226A5A5F0080FAD4 /* Model.xcdatamodel */,
+			);
+			currentVersion = FD9066B6226A5A5F0080FAD4 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FDEAFB8E2268295800FC830C /* Project object */;
 }

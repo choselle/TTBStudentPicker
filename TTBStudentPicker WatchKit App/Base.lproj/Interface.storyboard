@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7tz-ke-c0Y">
     <device id="watch40" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,13 +9,31 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
+        <!--Main Interface Controller-->
+        <scene sceneID="EeS-av-LQ6">
+            <objects>
+                <controller id="7tz-ke-c0Y" userLabel="Main Interface Controller" customClass="InterfaceController" customModule="TTBStudentPicker_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="TTB" textAlignment="center" id="ktv-9X-7ur">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <button width="1" alignment="left" title="Student Picker" id="F3j-5a-B0d">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" identifier="ClassSegue" id="Z4p-7t-MAa"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-37" y="336"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TTBStudentPicker_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="136" height="98" alignment="center" text="Hello!" textAlignment="center" id="hzF-WK-F2L">
-                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <fontDescription key="font" type="system" pointSize="28"/>
                         </label>
                         <label width="136" alignment="center" text="Students left: " textAlignment="center" id="bFY-tS-d38"/>
                         <button width="1" alignment="left" title="Start" id="WmV-J3-FqD">
@@ -26,9 +44,19 @@
                     </items>
                     <menu key="menu" id="tnD-mU-Uls">
                         <items>
-                            <menuItem title="Restart" icon="repeat" id="Jrf-3u-D2H">
+                            <menuItem title="Class A" icon="info" id="tbf-0q-Zf0">
                                 <connections>
-                                    <action selector="refreshButtonOnClick" destination="AgC-eL-Hgc" id="xet-UT-XpK"/>
+                                    <action selector="ClassAContextMenuPressed" destination="AgC-eL-Hgc" id="UsF-Lh-YxR"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Class B" icon="info" id="dii-GT-Ej7">
+                                <connections>
+                                    <action selector="ClassBContextMenuPressed" destination="AgC-eL-Hgc" id="fmN-6B-Yby"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Restart" icon="repeat" id="BtY-oh-Njt">
+                                <connections>
+                                    <action selector="refreshButtonOnClick" destination="AgC-eL-Hgc" id="vNB-ce-kcF"/>
                                 </connections>
                             </menuItem>
                         </items>
