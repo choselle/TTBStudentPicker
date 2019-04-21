@@ -10,8 +10,8 @@
 		FD9066B2226A4A3E0080FAD4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066AE226A4A3E0080FAD4 /* InterfaceController.swift */; };
 		FD9066B3226A4A3E0080FAD4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066AD226A4A3E0080FAD4 /* NotificationController.swift */; };
 		FD9066B4226A4A3E0080FAD4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B1226A4A3E0080FAD4 /* ExtensionDelegate.swift */; };
-		FD9066B7226A5A5F0080FAD4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B5226A5A5F0080FAD4 /* Model.xcdatamodeld */; };
-		FD9066B8226A5A5F0080FAD4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B5226A5A5F0080FAD4 /* Model.xcdatamodeld */; };
+		FD9066B7226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B5226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld */; };
+		FD9066B8226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B5226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld */; };
 		FDEAFB9A2268295800FC830C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFB992268295800FC830C /* AppDelegate.swift */; };
 		FDEAFB9C2268295800FC830C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFB9B2268295800FC830C /* ViewController.swift */; };
 		FDEAFB9F2268295800FC830C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFB9D2268295800FC830C /* Main.storyboard */; };
@@ -134,7 +134,7 @@
 				FDEAFBA02268295B00FC830C /* Assets.xcassets */,
 				FDEAFBA22268295B00FC830C /* LaunchScreen.storyboard */,
 				FDEAFBA52268295B00FC830C /* Info.plist */,
-				FD9066B5226A5A5F0080FAD4 /* Model.xcdatamodeld */,
+				FD9066B5226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld */,
 			);
 			path = TTBStudentPicker;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 			files = (
 				FDEAFB9C2268295800FC830C /* ViewController.swift in Sources */,
 				FDEAFB9A2268295800FC830C /* AppDelegate.swift in Sources */,
-				FD9066B7226A5A5F0080FAD4 /* Model.xcdatamodeld in Sources */,
+				FD9066B7226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,7 @@
 				FD9066B3226A4A3E0080FAD4 /* NotificationController.swift in Sources */,
 				FD9066B4226A4A3E0080FAD4 /* ExtensionDelegate.swift in Sources */,
 				FD9066B2226A4A3E0080FAD4 /* InterfaceController.swift in Sources */,
-				FD9066B8226A5A5F0080FAD4 /* Model.xcdatamodeld in Sources */,
+				FD9066B8226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,13 +633,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FD9066B5226A5A5F0080FAD4 /* Model.xcdatamodeld */ = {
+		FD9066B5226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				FD9066B6226A5A5F0080FAD4 /* Model.xcdatamodel */,
 			);
 			currentVersion = FD9066B6226A5A5F0080FAD4 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			path = TTBStudentPicker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
