@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD61910422714CA200B433C5 /* TTBStudentPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD61910122714CA200B433C5 /* TTBStudentPicker.xcdatamodeld */; };
 		FD9066B2226A4A3E0080FAD4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066AE226A4A3E0080FAD4 /* InterfaceController.swift */; };
 		FD9066B3226A4A3E0080FAD4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066AD226A4A3E0080FAD4 /* NotificationController.swift */; };
 		FD9066B4226A4A3E0080FAD4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B1226A4A3E0080FAD4 /* ExtensionDelegate.swift */; };
-		FD9066B7226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B5226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld */; };
-		FD9066B8226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9066B5226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld */; };
 		FDEAFB9A2268295800FC830C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFB992268295800FC830C /* AppDelegate.swift */; };
 		FDEAFB9C2268295800FC830C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFB9B2268295800FC830C /* ViewController.swift */; };
 		FDEAFB9F2268295800FC830C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFB9D2268295800FC830C /* Main.storyboard */; };
@@ -66,13 +65,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD61910222714CA200B433C5 /* TTBStudentPicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TTBStudentPicker.xcdatamodel; sourceTree = "<group>"; };
+		FD61910322714CA200B433C5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FD9066AC226A4A3E0080FAD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD9066AD226A4A3E0080FAD4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		FD9066AE226A4A3E0080FAD4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		FD9066AF226A4A3E0080FAD4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FD9066B0226A4A3E0080FAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD9066B1226A4A3E0080FAD4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		FD9066B6226A5A5F0080FAD4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FDEAFB962268295800FC830C /* TTBStudentPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTBStudentPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAFB992268295800FC830C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAFB9B2268295800FC830C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 				FDEAFBA02268295B00FC830C /* Assets.xcassets */,
 				FDEAFBA22268295B00FC830C /* LaunchScreen.storyboard */,
 				FDEAFBA52268295B00FC830C /* Info.plist */,
-				FD9066B5226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld */,
+				FD61910122714CA200B433C5 /* TTBStudentPicker.xcdatamodeld */,
 			);
 			path = TTBStudentPicker;
 			sourceTree = "<group>";
@@ -293,9 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD61910422714CA200B433C5 /* TTBStudentPicker.xcdatamodeld in Sources */,
 				FDEAFB9C2268295800FC830C /* ViewController.swift in Sources */,
 				FDEAFB9A2268295800FC830C /* AppDelegate.swift in Sources */,
-				FD9066B7226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,6 @@
 				FD9066B3226A4A3E0080FAD4 /* NotificationController.swift in Sources */,
 				FD9066B4226A4A3E0080FAD4 /* ExtensionDelegate.swift in Sources */,
 				FD9066B2226A4A3E0080FAD4 /* InterfaceController.swift in Sources */,
-				FD9066B8226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,12 +632,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FD9066B5226A5A5F0080FAD4 /* TTBStudentPicker.xcdatamodeld */ = {
+		FD61910122714CA200B433C5 /* TTBStudentPicker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FD9066B6226A5A5F0080FAD4 /* Model.xcdatamodel */,
+				FD61910222714CA200B433C5 /* TTBStudentPicker.xcdatamodel */,
+				FD61910322714CA200B433C5 /* Model.xcdatamodel */,
 			);
-			currentVersion = FD9066B6226A5A5F0080FAD4 /* Model.xcdatamodel */;
+			currentVersion = FD61910222714CA200B433C5 /* TTBStudentPicker.xcdatamodel */;
 			path = TTBStudentPicker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
