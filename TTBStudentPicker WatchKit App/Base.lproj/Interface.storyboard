@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7tz-ke-c0Y">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch40" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,12 +17,16 @@
                         <label alignment="center" text="TTB" textAlignment="center" id="ktv-9X-7ur">
                             <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
                         </label>
-                        <button width="1" alignment="left" title="Student Picker" id="F3j-5a-B0d">
+                        <button width="1" alignment="left" title="Student Picker" enabled="NO" id="F3j-5a-B0d"/>
+                        <button width="1" alignment="left" title="TEST" id="Sks-D1-0cS">
                             <connections>
-                                <segue destination="AgC-eL-Hgc" kind="push" identifier="ClassSegue" id="Z4p-7t-MAa"/>
+                                <action selector="sendMessage" destination="7tz-ke-c0Y" id="OUI-lp-zh6"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="studentPickerButtonOutlet" destination="F3j-5a-B0d" id="n0G-el-xj3"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-37" y="336"/>
@@ -36,7 +40,7 @@
                             <fontDescription key="font" type="system" pointSize="28"/>
                         </label>
                         <label width="136" alignment="center" text="Students left: " textAlignment="center" id="bFY-tS-d38"/>
-                        <button width="1" alignment="left" title="Start" id="WmV-J3-FqD">
+                        <button width="1" alignment="left" title="Start" enabled="NO" id="WmV-J3-FqD">
                             <connections>
                                 <action selector="buttonOnClick" destination="AgC-eL-Hgc" id="4Sd-iX-jBb"/>
                             </connections>
@@ -62,7 +66,7 @@
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="buttonOutlet" destination="WmV-J3-FqD" id="EDx-DB-5m9"/>
+                        <outlet property="buttonOnClickOutlet" destination="WmV-J3-FqD" id="aKL-T4-qXJ"/>
                         <outlet property="labelFoo" destination="hzF-WK-F2L" id="eY9-71-LyU"/>
                         <outlet property="studentCountLabel" destination="bFY-tS-d38" id="yiK-A3-Lxg"/>
                     </connections>

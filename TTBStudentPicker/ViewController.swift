@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        title = "The List"
+        title = "TTB Student Picker"
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "Cell")
         
@@ -129,5 +129,6 @@ extension ViewController: UITableViewDataSource {
             return cell
     }
 }
+
 
 
